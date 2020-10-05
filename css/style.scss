@@ -152,9 +152,10 @@ article {
 
 .attribution {
     border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
     position: fixed;
     bottom: 0;
-    right: 0;
+    margin: 0 auto;
     font-size: 11px;
     text-align: center;
     background-color: #fff;
@@ -170,21 +171,18 @@ article {
     article {
         display: flex;
         flex-direction: row;
-        width: 90vh;
-
-        margin-left: 5em;
-        margin-right: 5em;
+        max-width: 1000px;
+        min-height: 400px;
 
         .article-image-wrap {
-            width: 45%;
-            min-height: 400px;
+            width: 400px;
+
             border-radius: $main-radius 0 0 $main-radius;
-            background-size: auto;
             background-position: left;
         }
 
         .article-content-wrap {
-            width: 55%;
+            width: 600px;
 
             .content-top {
                 h1 { font-size: 1.8rem; }
@@ -199,9 +197,9 @@ article {
                     width: 280px;
                     height: 30px;
                     left: auto; // Reset from mobile
-                    top: -75px;
+                    top: -55px;
                     right: -55px;
-                    padding: 2em;
+                    padding: 1.5em;
 
                     // display: flex; // A bit ugly but flex is set through JS
                     align-items: center;
@@ -212,7 +210,7 @@ article {
                 .share-options:before {
                     content: "";
                     position: absolute;
-                    top: 60px;
+                    top: 40px;
                     left: 0;
                     right: 0;
                     margin: 0 auto;
