@@ -127,7 +127,7 @@ article {
                     color: $grayish-blue;
                     letter-spacing: 5px;
                 }
-                // padding: 2.4em 3em; // Closest to center
+
                 span, svg {
                     margin-right: 1.3em;
                 }
@@ -194,16 +194,19 @@ article {
                 .share-options {
                     box-shadow: 10px 10px 25px $box-shadow-color;
                     border-radius: 5px;
-                    width: 280px;
+                    width: 250px;
                     height: 30px;
                     left: auto; // Reset from mobile
-                    top: -55px;
-                    right: -55px;
+                    top: -50px;
+                    right: -42px;
                     padding: 1.5em;
 
                     // display: flex; // A bit ugly but flex is set through JS
                     align-items: center;
-                    justify-content: center;
+                    justify-content: space-around;
+                    span, svg {
+                        margin-right: 0; // Reset from mobile
+                    }
                 }
 
                 // Down arrow for share options
@@ -211,15 +214,10 @@ article {
                     content: "";
                     position: absolute;
                     top: 40px;
-                    left: 0;
-                    right: 0;
                     margin: 0 auto;
-                    width: 0;
-                    height: 0;
                     z-index: -1;
+                    border: 20px solid transparent;
                     border-top: 20px solid $very-dark-grayish-blue;
-                    border-left: 20px solid transparent;
-                    border-right: 20px solid transparent;
                 }
             }
         }
